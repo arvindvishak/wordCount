@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Counter</title>
+    </head>
+
+    <body>
+        <h1>Count</h1>
+        <a href="{% url 'home' %}">Start Again!</a>
+        <br>
+        <a href="{% url 'about' %}"> About this Counter</a>
+        <h1>Your text: </h1>
+        <p>{{submittedText}}</p>
+        <br>
+        <p> Your text is {{lengths}} words long.</p>
+        <br>
+        <p> Your word dictionary is</p>
+        <br>
+        {% for word, countTotal in wordDictionary%}
+        {{word}} - {{countTotal}}
+        <br>
+        {% endfor %}
+    </body>
+</html>

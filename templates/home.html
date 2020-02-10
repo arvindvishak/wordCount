@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+
+    <body>
+        <h2>Word Count Web</h2> 
+
+        <form action="{% url 'count' %}">
+            <textarea name="fullText" cols="40" rows="10"></textarea>
+            <br>
+            <input type="submit" value="Count" /> 
+        </form>
+
+    </body>
+
+</html>
